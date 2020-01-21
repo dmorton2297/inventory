@@ -1,0 +1,6 @@
+<div class="container primary-color card-border">
+
+  <h2 class="header">{{location.name}} Inventory </h2>
+
+  <app-inventory-item *ngFor="let item of location.inventory" [item]="item"></app-inventory-item>
+</div>

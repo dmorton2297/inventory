@@ -1,0 +1,15 @@
+.container {
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  z-index: 1;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #665b52 !important;
+}

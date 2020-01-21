@@ -1,0 +1,25 @@
+.container {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-container {
+  max-width: 150px;
+  max-height: 50px;
+
+}
+
+.nav-buttons {
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+::ng-deep .menu-container {
+  background: ffffff;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}

@@ -1,0 +1,21 @@
+<div class="container primary-color bottom-margin dark-border">
+  <div class="image-container">
+    <img
+      class="image"
+      src="{{item.image}}"
+    />
+  </div>
+  <div class="info">
+    <p class="info-item"><strong>Name:</strong> {{ item.name }}</p>
+    <p class="info-item"><strong>Description:</strong> {{ item.description }}</p>
+    <p class="info-item"><strong>Category:</strong> {{ item.category }}</p>
+    <p class="info-item"><strong>Quantity:</strong> {{ item.quantity }}</p>
+    <p class="info-item"><strong>Status:</strong> {{ item.status}}</p>
+  </div>
+  <div class="buttons">
+    <button mat-button class="default-button bottom-margin">Edit</button>
+    <button mat-button class="default-button bottom-margin">Change Status</button>
+    <button mat-button class="default-button danger-color">Remove</button>
+
+  </div>
+</div>

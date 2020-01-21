@@ -1,0 +1,14 @@
+<div class="container primary-color card-border">
+  <div class="logo-container">
+    <app-logo></app-logo>
+  </div>
+  <div class='nav-buttons'>
+    <button mat-button [matMenuTriggerFor]="addMenu" class="default-button side-margin menu">Add</button>
+    <mat-menu #addMenu="matMenu" class="menu-container">
+      <button mat-menu-item class="default-button no-border">Location</button>
+      <button mat-menu-item class="default-button no-border">Category</button>
+      <app-add-item-modal></app-add-item-modal>
+    </mat-menu>
+    <button mat-button class="default-button">Export Inventory</button>
+  </div>
+</div>
