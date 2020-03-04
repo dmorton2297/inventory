@@ -15,10 +15,23 @@ import { InventoryItemComponent } from './inventory-item/inventory-item.componen
 import { AddItemComponent } from './add-item/add-item.component';
 import { AddItemModalComponent } from './add-item-modal/add-item-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import {  MatIconModule, MatIcon } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { EditItemComponent } from './edit-item/edit-item.component';
+import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import { AddCategoryModalComponent } from './add-category-modal/add-category-modal.component';
+import { AddLocationComponent } from './add-location/add-location.component';
+import { AddLocationModalComponent } from './add-location-modal/add-location-modal.component';
+import { TabComponent } from './tab/tab.component';
+import { ChangeStatusComponent } from './change-status/change-status.component';
+import { ChangeStatusModalComponent } from './change-status-modal/change-status-modal.component';
+import { RemoveLocationModalComponent } from './remove-location-modal/remove-location-modal.component';
+import { RemoveLocationComponent } from './remove-location/remove-location.component';
 
 
 
@@ -33,10 +46,26 @@ import { MatSelectModule } from '@angular/material/select';
     InventoryListComponent,
     InventoryItemComponent,
     AddItemComponent,
-    AddItemModalComponent
+    AddItemModalComponent,
+    EditItemComponent,
+    EditItemModalComponent,
+    AddCategoryComponent,
+    AddCategoryModalComponent,
+    AddLocationComponent,
+    AddLocationModalComponent,
+    TabComponent,
+    ChangeStatusComponent,
+    ChangeStatusModalComponent,
+    RemoveLocationModalComponent,
+    RemoveLocationComponent
   ],
   entryComponents: [
-    AddItemComponent
+    AddItemComponent,
+    EditItemComponent,
+    AddCategoryComponent,
+    AddLocationComponent,
+    ChangeStatusComponent,
+    RemoveLocationComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +78,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatIconModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

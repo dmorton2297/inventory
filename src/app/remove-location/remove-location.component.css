@@ -1,0 +1,10 @@
+::ng-deep .mat-h3 {
+  margin: '0 0 0 0' !important;
+}
+
+.table-row {
+  padding: 30px;
+  margin: 2px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}

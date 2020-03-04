@@ -9,13 +9,19 @@
     <p class="info-item"><strong>Name:</strong> {{ item.name }}</p>
     <p class="info-item"><strong>Description:</strong> {{ item.description }}</p>
     <p class="info-item"><strong>Category:</strong> {{ item.category }}</p>
-    <p class="info-item"><strong>Quantity:</strong> {{ item.quantity }}</p>
+    <div class="quantity-container">
+      <p class="info-item"><strong>Quantity:</strong> {{ item.quantity }}</p>
+      <button (click)="incrementQuantity()" mat-button class="default-button icon side-margin"><mat-icon >keyboard_arrow_up</mat-icon></button>
+      <button (click)="decrementQuantity()" mat-button class="default-button icon"><mat-icon>keyboard_arrow_down</mat-icon></button>
+    </div>
     <p class="info-item"><strong>Status:</strong> {{ item.status}}</p>
   </div>
   <div class="buttons">
-    <button mat-button class="default-button bottom-margin">Edit</button>
-    <button mat-button class="default-button bottom-margin">Change Status</button>
-    <button mat-button class="default-button danger-color">Remove</button>
+    <app-edit-item-modal [item]="item"></app-edit-item-modal>
+    <div class="bottom-margin">
+      <app-change-status-modal [item]="item"></app-change-status-modal>
+    </div>
+    <button mat-button class="default-button danger-color" (click)="onRemove()">Remove</button>
 
   </div>
 </div>

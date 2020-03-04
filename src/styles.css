@@ -18,12 +18,20 @@
   border: 1px solid #665b52 !important;
 }
 
+.icon {
+  width: 50px !important;
+}
+
 .dark-border {
   border: 1px solid #665b52 !important;
 }
 
 .no-border {
   border: none !important;
+}
+
+.no-margin {
+  margin: '0 0 0 0' !important;
 }
 
 .side-margin {
@@ -37,6 +45,12 @@
 .danger-color {
   background-color: #ff9b9b;
   color: #ffffff;
+}
+
+.table-row {
+  margin: 0;
+  background-color: #ebebeb;
+  padding: 10
 }
 
 body {

@@ -1,7 +1,9 @@
 <div class="container">
-  <mat-tab-group>
-    <mat-tab label="{{locations[0].name}}"><app-inventory-list [location]="locations[0]"></app-inventory-list></mat-tab>
-    <mat-tab label="{{locations[1].name}}"><app-inventory-list [location]="locations[1]"></app-inventory-list></mat-tab>
-    <mat-tab label="{{locations[2].name}}"><app-inventory-list [location]="locations[2]"></app-inventory-list></mat-tab>
+  <app-navigation (update)="onEvent($event)"></app-navigation>
+  <mat-tab-group #tabGroup (selectedTabChange)="tabChanged($event)">
+    <div *ngFor="let l of locations">
+      <mat-tab label="{{l.name}}"><app-inventory-list [location]="l"></app-inventory-list></mat-tab>
+    </div>
+
   </mat-tab-group>
 </div>

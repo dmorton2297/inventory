@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="mat-h2">Remove Location from Inventory</h2>
+  <div mat-dialog-content>
+    <div *ngFor="let location of data" class="table-row">
+      <h3 class="mat-h3" style="margin-bottom: 0 !important;">{{location.name}}</h3>
+      <mat-checkbox class="example-margin" [(ngModel)]="formData[location.id]">Remove</mat-checkbox>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button class="default-button danger-color" (click)="onNoClick()">Cancel</button>
+    <button mat-button class="default-button" [mat-dialog-close]="createResponse(formData)" cdkFocusInitial>Update</button>
+  </div>
+</div>

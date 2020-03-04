@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 class="mat-h2">Change Status of {{data.name}}</h2>
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Change status</mat-label>
+      <select [(ngModel)]="data.status" matNativeControl required>
+        <option *ngFor="let s of OPTIONS" value="{{s}}">{{s}}</option>
+      </select>
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button class="default-button danger-color" (click)="onNoClick()">Cancel</button>
+    <button mat-button class="default-button" [mat-dialog-close]="data" cdkFocusInitial>Update</button>
+  </div>
+</div>

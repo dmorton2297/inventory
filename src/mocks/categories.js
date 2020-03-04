@@ -1,7 +1,5 @@
 const categories = [
-  'Tables',
-  'Chairs',
-  'MultiPurpose'
-];
+  'Tables', 'Chairs', 'Other'
+]
 
 export default categories;

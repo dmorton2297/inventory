@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="mat-h2">Create a new Location</h2>
+  <div mat-dialog-content>
+    <div class="item">
+      <mat-form-field appearance="outline">
+        <mat-label>New Location</mat-label>
+        <input class="input" matInput placeholder="Placeholder" [(ngModel)]="data" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button class="default-button danger-color" (click)="onNoClick()">Cancel</button>
+    <button mat-button class="default-button" [mat-dialog-close]="data" cdkFocusInitial>Create</button>
+  </div>
+</div>
+

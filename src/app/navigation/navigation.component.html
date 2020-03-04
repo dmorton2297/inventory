@@ -5,9 +5,14 @@
   <div class='nav-buttons'>
     <button mat-button [matMenuTriggerFor]="addMenu" class="default-button side-margin menu">Add</button>
     <mat-menu #addMenu="matMenu" class="menu-container">
-      <button mat-menu-item class="default-button no-border">Location</button>
+      <app-add-location-modal></app-add-location-modal>
+      <app-add-category-modal></app-add-category-modal>
+      <app-add-item-modal (update)="onEvent($event)"></app-add-item-modal>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="removeMenu" class="default-button side-margin menu">Remove</button>
+    <mat-menu #removeMenu="matMenu" class="menu-container">
+      <app-remove-location-modal></app-remove-location-modal>
       <button mat-menu-item class="default-button no-border">Category</button>
-      <app-add-item-modal></app-add-item-modal>
     </mat-menu>
     <button mat-button class="default-button">Export Inventory</button>
   </div>

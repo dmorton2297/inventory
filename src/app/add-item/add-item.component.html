@@ -33,8 +33,7 @@
         <mat-label>Category</mat-label>
         <select [(ngModel)]="data.category" matNativeControl required>
           <option value="none">None</option>
-          <option value="Chairs">Chairs</option>
-          <option value="Tables">Tables</option>
+          <option *ngFor="let c of CATEGORIES" value="{{c}}">{{c}}</option>
         </select>
       </mat-form-field>
     </div>
